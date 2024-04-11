@@ -1,5 +1,15 @@
-create table store(
-inventory int not null,
-price int not null,
-kind varchar(50)
-);
+create table store
+(num int,
+name varchar(10),
+type varchar(5),
+price int,
+stock int);
+
+insert into store (num, name, type, price, stock)
+values (1,'초코파이','과자',8000,100),(2,'꽈배기','과자',2000,150),(3,'포카칩','과자',2500,140),(4,'콘칩','과자',2800,130),(5,'양파링','과자',1500,100),
+(6,'코카콜라','음료',2300,50),(7,'환타','음료',2800,80),(8,'신라면','면류',3500,120),(9,'안성탕면','면류',3300,160),
+(10,'너구리','면류',4000,90),(11,'조니워커','주류',200000,5);
+
+select * from store;
+
+commit
